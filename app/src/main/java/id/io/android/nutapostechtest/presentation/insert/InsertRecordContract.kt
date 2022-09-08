@@ -1,6 +1,6 @@
 package id.io.android.nutapostechtest.presentation.insert
 
-interface Contract {
+interface InsertRecordContract {
     interface Presenter {
         fun onUangMasukIdChanged(id: String)
         fun onTerimaDariChanged(terimaDari: String)

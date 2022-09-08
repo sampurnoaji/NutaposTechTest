@@ -11,9 +11,9 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 class InsertRecordPresenter @Inject constructor(
-    private var view: Contract.View?,
+    private var view: InsertRecordContract.View?,
     private val repository: RecordRepository
-) : Contract.Presenter {
+) : InsertRecordContract.Presenter {
 
     private val _insertRecord = MutableLiveData<LoadState<Boolean>>()
     val insertRecord: LiveData<LoadState<Boolean>>

@@ -6,23 +6,39 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityComponent
 import id.io.android.nutapostechtest.data.repository.RecordRepositoryImpl
-import id.io.android.nutapostechtest.presentation.insert.Contract
+import id.io.android.nutapostechtest.presentation.insert.InsertRecordContract
 import id.io.android.nutapostechtest.presentation.insert.InsertRecordActivity
 import id.io.android.nutapostechtest.presentation.insert.InsertRecordPresenter
+import id.io.android.nutapostechtest.presentation.list.MainActivity
+import id.io.android.nutapostechtest.presentation.list.MainContract
+import id.io.android.nutapostechtest.presentation.list.MainPresenter
 
 @Module
 @InstallIn(ActivityComponent::class)
 object PresentationModule {
     @Provides
+    fun provideMainActivity(activity: Activity): MainActivity =
+        activity as MainActivity
+
+    @Provides
     fun provideInsertRecordActivity(activity: Activity): InsertRecordActivity =
         activity as InsertRecordActivity
 
     @Provides
-    fun provideInsertRecordView(view: InsertRecordActivity): Contract.View = view
+    fun provideInsertRecordView(view: InsertRecordActivity): InsertRecordContract.View = view
+
+    @Provides
+    fun provideMainView(view: MainActivity): MainContract.View = view
 
     @Provides
     fun provideInsertRecordPresenter(
-        view: Contract.View,
+        view: InsertRecordContract.View,
         repository: RecordRepositoryImpl
     ): InsertRecordPresenter = InsertRecordPresenter(view, repository)
+
+    @Provides
+    fun provideMainPresenter(
+        view: MainContract.View,
+        repository: RecordRepositoryImpl
+    ): MainPresenter = MainPresenter(view, repository)
 }

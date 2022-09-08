@@ -6,6 +6,7 @@
 
     <string name="record">Transaksi</string>
     <string name="record_list">Daftar Transaksi</string>
+    <string name="record_list_empty">Daftar Transaksi kosong</string>
     <string name="record_uang_masuk">Uang Masuk</string>
     <string name="record_uang_masuk_id">ID</string>
     <string name="record_uang_masuk_terima_dari">Terima Dari</string>

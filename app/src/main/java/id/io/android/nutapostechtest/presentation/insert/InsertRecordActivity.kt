@@ -14,7 +14,7 @@ import id.io.android.nutapostechtest.util.viewBinding
 import javax.inject.Inject
 
 @AndroidEntryPoint
-class InsertRecordActivity : AppCompatActivity(), Contract.View {
+class InsertRecordActivity : AppCompatActivity(), InsertRecordContract.View {
 
     private val binding by viewBinding(ActivityInsertRecordBinding::inflate)
 
