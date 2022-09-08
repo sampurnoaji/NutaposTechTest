@@ -11,7 +11,8 @@ data class Record(
     val keterangan: String,
     val jumlah: Long,
     val tanggal: Date? = null,
-    val nomor: String? = null
+    val nomor: String? = null,
+    val rekening: Rekening? = null
 ) {
     fun toEntity() = RecordEntity(
         uangMasukId = uangMasukId,
