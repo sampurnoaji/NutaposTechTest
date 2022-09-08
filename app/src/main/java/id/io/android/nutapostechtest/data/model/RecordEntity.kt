@@ -4,6 +4,8 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import id.io.android.nutapostechtest.domain.model.Record
+import id.io.android.nutapostechtest.util.DatePattern
+import id.io.android.nutapostechtest.util.toNullableDate
 
 @Entity
 data class RecordEntity(
@@ -25,6 +27,8 @@ data class RecordEntity(
         uangMasukId = uangMasukId,
         terimaDari = terimaDari,
         keterangan = keterangan,
-        jumlah = jumlah
+        jumlah = jumlah,
+        tanggal = tanggal?.toNullableDate(DatePattern.DATABASE),
+        nomor = nomor
     )
 }

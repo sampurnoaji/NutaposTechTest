@@ -50,7 +50,7 @@ class InsertRecordPresenter @Inject constructor(
                         uangMasukId = uangMasukId,
                         terimaDari = terimaDari,
                         keterangan = keterangan,
-                        jumlah = jumlah.toLongOrNull() ?: 0
+                        jumlah = jumlah.toLongOrNull() ?: 0,
                     )
                 )
                 LoadState.Success(true)

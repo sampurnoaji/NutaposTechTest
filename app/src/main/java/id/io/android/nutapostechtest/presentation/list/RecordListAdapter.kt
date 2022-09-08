@@ -27,6 +27,7 @@ class RecordListAdapter : ListAdapter<Record, RecordListAdapter.ContentViewHolde
                 tvTerimaDari.text = record.terimaDari
                 tvKeterangan.text = record.keterangan
                 tvJumlah.text = record.jumlah.toString()
+                tvNomor.text = record.nomor
             }
         }
     }
