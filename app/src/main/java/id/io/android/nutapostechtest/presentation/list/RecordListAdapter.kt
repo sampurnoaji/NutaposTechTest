@@ -39,6 +39,12 @@ class RecordListAdapter : ListAdapter<Record, RecordListAdapter.ContentViewHolde
                 val diskon = listOf(0.1f, 0.1f)
                 tvSetelahDiskon.text = record.jumlah.calculateDiscount(diskon).first
                 tvDiskon.text = record.jumlah.calculateDiscount(diskon).second
+
+                // Markup 10%, Share 10%
+                val markup = 0.1f
+                val share = 0.1f
+                tvNetResto.text = record.jumlah.calculateRestoOjol(markup, share).first
+                tvShareOjol.text = record.jumlah.calculateRestoOjol(markup, share).second
             }
         }
 
@@ -55,6 +61,13 @@ class RecordListAdapter : ListAdapter<Record, RecordListAdapter.ContentViewHolde
                 final -= diskon
             }
             return Pair(final.toRupiah(), diskon.toRupiah())
+        }
+
+        private fun Long.calculateRestoOjol(markup: Float, share: Float): Pair<String, String> {
+            val afterMarkup = this + (this * markup)
+            val resto = (afterMarkup * (1 - share)).roundToLong()
+            val ojol = (afterMarkup * share).roundToLong()
+            return Pair(resto.toRupiah(), ojol.toRupiah())
         }
 
         private fun Long.toRupiah(): String {

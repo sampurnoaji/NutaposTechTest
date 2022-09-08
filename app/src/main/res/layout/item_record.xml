@@ -78,6 +78,7 @@
                     android:paddingHorizontal="16dp"
                     android:paddingVertical="4dp"
                     android:textColor="@color/black"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     tools:text="Rp 150.000" />
             </TableRow>
@@ -95,6 +96,11 @@
                     tools:text="Rp 150.000" />
             </TableRow>
 
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
             <TableRow>
 
                 <TextView
@@ -107,6 +113,11 @@
                     android:paddingVertical="4dp"
                     tools:text="Rp 150.000" />
             </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
 
             <TableRow>
 
@@ -129,6 +140,37 @@
 
                 <TextView
                     android:id="@+id/tvSetelahDiskon"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="4dp"
+                    tools:text="Rp 150.000" />
+            </TableRow>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/black" />
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/record_uang_masuk_net_resto"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvNetResto"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="4dp"
+                    tools:text="Rp 150.000" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/record_uang_masuk_share_ojol"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvShareOjol"
                     android:paddingHorizontal="16dp"
                     android:paddingVertical="4dp"
                     tools:text="Rp 150.000" />
