@@ -11,7 +11,6 @@ import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import id.io.android.nutapostechtest.data.source.AppDatabase
 import id.io.android.nutapostechtest.data.source.RecordDao
-import javax.inject.Provider
 import javax.inject.Singleton
 
 @Module
@@ -22,18 +21,17 @@ object DatabaseModule {
 
     @Singleton
     @Provides
-    fun provideDb(
-        @ApplicationContext context: Context,
-        provider: Provider<RecordDao>
-    ): AppDatabase {
+    fun provideDb(@ApplicationContext context: Context): AppDatabase {
         return Room.databaseBuilder(context, AppDatabase::class.java, DB_NAME)
-//            .addCallback(DatabaseCallback(context, provider))
-//            .addMigrations(MIGRATION_1_2)
+            .addMigrations(MIGRATION_1_2)
             .build()
     }
 
-    val MIGRATION_1_2 = object : Migration(1, 2) {
-        override fun migrate(database: SupportSQLiteDatabase) {}
+    private val MIGRATION_1_2 = object : Migration(1, 2) {
+        override fun migrate(database: SupportSQLiteDatabase) {
+            database.execSQL("ALTER TABLE RecordEntity ADD COLUMN tanggal TEXT")
+            database.execSQL("ALTER TABLE RecordEntity ADD COLUMN nomor TEXT")
+        }
     }
 
     @Provides

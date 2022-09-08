@@ -4,7 +4,7 @@ import androidx.room.Database
 import androidx.room.RoomDatabase
 import id.io.android.nutapostechtest.data.model.RecordEntity
 
-@Database(entities = [RecordEntity::class], version = 1)
+@Database(entities = [RecordEntity::class], version = 2)
 abstract class AppDatabase: RoomDatabase() {
     abstract fun recordDao(): RecordDao
 }

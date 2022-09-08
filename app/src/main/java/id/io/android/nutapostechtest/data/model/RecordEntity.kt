@@ -15,7 +15,11 @@ data class RecordEntity(
     @ColumnInfo(name = "keterangan")
     val keterangan: String,
     @ColumnInfo(name = "jumlah")
-    val jumlah: Long
+    val jumlah: Long,
+    @ColumnInfo(name = "tanggal")
+    val tanggal: String? = null,
+    @ColumnInfo(name = "nomor")
+    val nomor: String? = null,
 ) {
     fun toDomain() = Record(
         uangMasukId = uangMasukId,
