@@ -92,6 +92,18 @@
                     android:paddingVertical="4dp"
                     tools:text="Rp 150.000" />
             </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:text="@string/record_uang_masuk_net_sales"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvNetSales"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="4dp"
+                    tools:text="Rp 150.000" />
+            </TableRow>
         </TableLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 

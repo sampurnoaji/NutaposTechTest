@@ -13,6 +13,7 @@
     <string name="record_uang_masuk_keterangan">Keterangan</string>
     <string name="record_uang_masuk_jumlah">Jumlah</string>
     <string name="record_uang_masuk_nomor">Nomor</string>
+    <string name="record_uang_masuk_net_sales">Net Sales (10%)</string>
 
     <string name="record_insert">Tambah Transaksi</string>
     <string name="record_insert_success">Berhasil menambah Transaksi</string>
