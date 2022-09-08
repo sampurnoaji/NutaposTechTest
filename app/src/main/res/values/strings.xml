@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">NutaposTechTest</string>
+
+    <string name="insert">Tambah</string>
+    <string name="close">Tutup</string>
+
+    <string name="record">Transaksi</string>
+    <string name="record_list">Daftar Transaksi</string>
+    <string name="record_uang_masuk">Uang Masuk</string>
+    <string name="record_uang_masuk_id">ID</string>
+    <string name="record_uang_masuk_terima_dari">Terima Dari</string>
+    <string name="record_uang_masuk_keterangan">Keterangan</string>
+    <string name="record_uang_masuk_jumlah">Jumlah</string>
+
+    <string name="record_insert">Tambah Transaksi</string>
+    <string name="record_insert_success">Berhasil menambah Transaksi</string>
+    <string name="record_insert_failed">Gagal menambah Transaksi</string>
 </resources>

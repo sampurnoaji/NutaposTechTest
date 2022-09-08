@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginBottom="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvUangMasuk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/record_uang_masuk"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tvUangMasuk">
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/record_uang_masuk_id"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvId"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="4dp"
+                    tools:text="TRX123" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/record_uang_masuk_terima_dari"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvTerimaDari"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="4dp"
+                    tools:text="Agus Susanto" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/record_uang_masuk_keterangan"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvKeterangan"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="4dp"
+                    tools:text="Tunai" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/record_uang_masuk_jumlah"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvJumlah"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="4dp"
+                    tools:text="Rp 150.000" />
+            </TableRow>
+        </TableLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

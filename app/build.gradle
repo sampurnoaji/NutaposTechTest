@@ -40,7 +40,7 @@ android {
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.7.0'
-    implementation 'androidx.appcompat:appcompat:1.5.0'
+    implementation 'androidx.appcompat:appcompat:1.4.1'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
@@ -54,13 +54,12 @@ dependencies {
     kapt "androidx.room:room-compiler:$room"
 
     // Kotlin Extension
-    def ktx_core = "1.7.0"
     def ktx_fragment = "1.4.1"
-    def ktx_livedata = "2.4.1"
+    def ktx_lifecycle = "2.4.1"
     def ktx_room = "2.4.2"
-    implementation("androidx.core:core-ktx:$ktx_core")
     implementation("androidx.fragment:fragment-ktx:$ktx_fragment")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$ktx_livedata")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:$ktx_lifecycle")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$ktx_lifecycle")
     implementation("androidx.room:room-ktx:$ktx_room")
 
     // Dependency Injection
