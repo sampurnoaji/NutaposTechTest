@@ -30,11 +30,34 @@ class RecordListAdapter : ListAdapter<Record, RecordListAdapter.ContentViewHolde
                 tvKeterangan.text = record.keterangan
                 tvJumlah.text = record.jumlah.toRupiah()
                 tvNomor.text = record.nomor
-                tvNetSales.text = (record.jumlah / 1.1).roundToLong().toRupiah()
+
+                // Pajak 10%
+                val pajak = 0.1f
+                tvNetSales.text = record.jumlah.calculateNetSales(pajak)
+
+                // Diskon 10% + 10%
+                val diskon = listOf(0.1f, 0.1f)
+                tvSetelahDiskon.text = record.jumlah.calculateDiscount(diskon).first
+                tvDiskon.text = record.jumlah.calculateDiscount(diskon).second
             }
         }
 
-        fun Long.toRupiah(): String {
+        private fun Long.calculateNetSales(pajak: Float): String {
+            val net = this / pajak
+            return net.roundToLong().toRupiah()
+        }
+
+        private fun Long.calculateDiscount(discounts: List<Float>): Pair<String, String> {
+            var final = this
+            var diskon = 0L
+            discounts.forEach {
+                diskon += ((final - diskon) * it).roundToLong()
+                final -= diskon
+            }
+            return Pair(final.toRupiah(), diskon.toRupiah())
+        }
+
+        private fun Long.toRupiah(): String {
             return try {
                 val localeId = Locale("id", "ID")
                 "Rp " + String.format(localeId, "%,d", this)

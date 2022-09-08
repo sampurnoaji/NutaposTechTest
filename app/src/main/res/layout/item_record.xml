@@ -77,6 +77,8 @@
                     android:id="@+id/tvJumlah"
                     android:paddingHorizontal="16dp"
                     android:paddingVertical="4dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
                     tools:text="Rp 150.000" />
             </TableRow>
 
@@ -92,6 +94,7 @@
                     android:paddingVertical="4dp"
                     tools:text="Rp 150.000" />
             </TableRow>
+
             <TableRow>
 
                 <TextView
@@ -100,6 +103,32 @@
 
                 <TextView
                     android:id="@+id/tvNetSales"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="4dp"
+                    tools:text="Rp 150.000" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/record_uang_masuk_diskon"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvDiskon"
+                    android:paddingHorizontal="16dp"
+                    android:paddingVertical="4dp"
+                    tools:text="Rp 150.000" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:text="@string/record_uang_masuk_setelah_diskon"
+                    android:textColor="@color/black" />
+
+                <TextView
+                    android:id="@+id/tvSetelahDiskon"
                     android:paddingHorizontal="16dp"
                     android:paddingVertical="4dp"
                     tools:text="Rp 150.000" />
