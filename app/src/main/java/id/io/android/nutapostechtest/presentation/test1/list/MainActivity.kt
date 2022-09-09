@@ -1,4 +1,4 @@
-package id.io.android.nutapostechtest.presentation.list
+package id.io.android.nutapostechtest.presentation.test1.list
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,7 +8,7 @@ import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import dagger.hilt.android.AndroidEntryPoint
 import id.io.android.nutapostechtest.databinding.ActivityMainBinding
-import id.io.android.nutapostechtest.presentation.insert.InsertRecordActivity
+import id.io.android.nutapostechtest.presentation.test1.insert.InsertRecordActivity
 import id.io.android.nutapostechtest.util.viewBinding
 import javax.inject.Inject
 

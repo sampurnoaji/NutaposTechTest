@@ -1,4 +1,4 @@
-package id.io.android.nutapostechtest.presentation.list
+package id.io.android.nutapostechtest.presentation.test1.list
 
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.LiveData

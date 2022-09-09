@@ -1,4 +1,4 @@
-package id.io.android.nutapostechtest.presentation.insert
+package id.io.android.nutapostechtest.presentation.test1.insert
 
 interface InsertRecordContract {
     interface Presenter {

@@ -4,6 +4,9 @@
     <string name="insert">Tambah</string>
     <string name="close">Tutup</string>
 
+    <string name="test_1">Test 1</string>
+    <string name="test_2">Test 2</string>
+
     <string name="record">Transaksi</string>
     <string name="record_list">Daftar Transaksi</string>
     <string name="record_list_empty">Daftar Transaksi kosong</string>

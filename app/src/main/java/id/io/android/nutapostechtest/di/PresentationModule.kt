@@ -6,12 +6,12 @@ import dagger.Provides
 import dagger.hilt.InstallIn
 import dagger.hilt.android.components.ActivityComponent
 import id.io.android.nutapostechtest.data.repository.RecordRepositoryImpl
-import id.io.android.nutapostechtest.presentation.insert.InsertRecordContract
-import id.io.android.nutapostechtest.presentation.insert.InsertRecordActivity
-import id.io.android.nutapostechtest.presentation.insert.InsertRecordPresenter
-import id.io.android.nutapostechtest.presentation.list.MainActivity
-import id.io.android.nutapostechtest.presentation.list.MainContract
-import id.io.android.nutapostechtest.presentation.list.MainPresenter
+import id.io.android.nutapostechtest.presentation.test1.insert.InsertRecordContract
+import id.io.android.nutapostechtest.presentation.test1.insert.InsertRecordActivity
+import id.io.android.nutapostechtest.presentation.test1.insert.InsertRecordPresenter
+import id.io.android.nutapostechtest.presentation.test1.list.MainActivity
+import id.io.android.nutapostechtest.presentation.test1.list.MainContract
+import id.io.android.nutapostechtest.presentation.test1.list.MainPresenter
 
 @Module
 @InstallIn(ActivityComponent::class)
