@@ -12,6 +12,9 @@ import id.io.android.nutapostechtest.presentation.test1.insert.InsertRecordPrese
 import id.io.android.nutapostechtest.presentation.test1.list.MainActivity
 import id.io.android.nutapostechtest.presentation.test1.list.MainContract
 import id.io.android.nutapostechtest.presentation.test1.list.MainPresenter
+import id.io.android.nutapostechtest.presentation.test2.insert.InsertUangActivity
+import id.io.android.nutapostechtest.presentation.test2.insert.InsertUangContract
+import id.io.android.nutapostechtest.presentation.test2.insert.InsertUangPresenter
 
 @Module
 @InstallIn(ActivityComponent::class)
@@ -25,10 +28,17 @@ object PresentationModule {
         activity as InsertRecordActivity
 
     @Provides
+    fun provideInsertUangActivity(activity: Activity): InsertUangActivity =
+        activity as InsertUangActivity
+
+    @Provides
     fun provideInsertRecordView(view: InsertRecordActivity): InsertRecordContract.View = view
 
     @Provides
     fun provideMainView(view: MainActivity): MainContract.View = view
+
+    @Provides
+    fun provideInsertUangView(view: InsertUangActivity): InsertUangContract.View = view
 
     @Provides
     fun provideInsertRecordPresenter(
@@ -41,4 +51,9 @@ object PresentationModule {
         view: MainContract.View,
         repository: RecordRepositoryImpl
     ): MainPresenter = MainPresenter(view, repository)
+
+    @Provides
+    fun provideInsertUangPresenter(
+        view: InsertUangContract.View
+    ): InsertUangPresenter = InsertUangPresenter(view)
 }

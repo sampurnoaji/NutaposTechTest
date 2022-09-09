@@ -3,8 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable-v24/ic_prefix_rupiah.xml" value="0.2175" />
+        <entry key="app/src/main/res/drawable/button_color.xml" value="0.2175" />
         <entry key="app/src/main/res/layout/activity_entry_point.xml" value="0.335" />
-        <entry key="app/src/main/res/layout/activity_insert_record.xml" value="0.19959473150962512" />
+        <entry key="app/src/main/res/layout/activity_insert_record.xml" value="0.335" />
+        <entry key="app/src/main/res/layout/activity_insert_uang.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20643363728470113" />
         <entry key="app/src/main/res/layout/dialog_alert.xml" value="0.20643363728470113" />
         <entry key="app/src/main/res/layout/item_record.xml" value="0.335" />
