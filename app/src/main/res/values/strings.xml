@@ -6,9 +6,11 @@
     <string name="edit">Edit</string>
     <string name="save">Simpan</string>
     <string name="back">Kembali</string>
+    <string name="delete">Hapus</string>
 
     <string name="test_1">Test 1</string>
-    <string name="test_2">Test 2</string>
+    <string name="test_2_input">Test 2 Input</string>
+    <string name="test_2_list">Test 2 List</string>
 
     <string name="record">Transaksi</string>
     <string name="record_list">Daftar Transaksi</string>
@@ -34,4 +36,6 @@
     <string name="insert_dari_hint">Pemilik bisnis</string>
     <string name="insert_keterangan_hint">Tambahan modal</string>
     <string name="insert_jenis">Jenis</string>
+
+    <string name="list_cetak_ulang_struk">Cetak Ulang Struk</string>
 </resources>

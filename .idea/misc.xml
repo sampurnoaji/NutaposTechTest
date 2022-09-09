@@ -9,7 +9,10 @@
         <entry key="app/src/main/res/layout/activity_insert_record.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_insert_uang.xml" value="0.335" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.20643363728470113" />
+        <entry key="app/src/main/res/layout/activity_penjualan_list.xml" value="0.4067028985507246" />
         <entry key="app/src/main/res/layout/dialog_alert.xml" value="0.20643363728470113" />
+        <entry key="app/src/main/res/layout/item_list_child.xml" value="0.4067028985507246" />
+        <entry key="app/src/main/res/layout/item_list_tanggal_total.xml" value="0.375" />
         <entry key="app/src/main/res/layout/item_record.xml" value="0.335" />
         <entry key="app/src/main/res/layout/item_trx.xml" value="0.335" />
       </map>
